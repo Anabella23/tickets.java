@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>=
+<body>
+    
+
+    <nav class="navbar">
+        <a href="#" id="logo">Conf Bs As</a> 
+        <ul class="navlinks">
+            <li><a href="#">La conferencia</a></li>
+            <li><a href="#">Los oradores</a></li>
+            <li><a href="#">El lugar y la fecha</a></li>
+            <li><a href="#" class="blanco">Conviertete en orador</a></li>
+            <li><a href="#" class="verde">Comprar tickets</a></li>
+        </ul>
+
+    </nav>
+
+    
+
+    <div class="card-group">
+
+        <div class="card uno">
+            <h4>Estudiante</h4>
+            <p>Tienen un descuento</p>
+            <h3>80%</h3>
+            <p>* presentar documentacion</p>
+       </div>
+
+        <div class="card dos">
+            <h4>Trainee</h4>
+            <p>Tienen un descuento</p>
+            <h3>50%</h3>
+            <p>* presentar documentacion</p>
+        </div>
+
+        <div class="card tres">
+            <h4>Junior</h4>
+            <p>Tienen un descuento</p>
+            <h3>15%</h3>
+            <p>* presentar documentacion</p>
+        </div>
+
+
+    </div>
+
+    
+
+
+    <p class="centro1">VENTA</p>
+    <h2 class="centro2">VALOR DE TICKETS $200</h2>
+
+    
+
+    <div class="container">
+
+        <form>
+            <input class="nombre" type="text" placeholder="nombre">
+            <input class="apellido" type="text" placeholder="apellido"><br>
+
+            <input class="correo" type="text" placeholder="correo"><br>
+
+            <label for="cantidad">Cantidad</label>
+            <input id="cantidadEntradas"  type="text" class="cantidad"  placeholder="Cantidad"><br>
+
+            <label for="categoria">Categoria</label> 
+            <select id="inputState" class="form-control" id="categoria" >
+                <option selected value="estudiante">Estudiante</option>    
+                <option value="trainee">Trainee</option>    
+                <option value="junior">Junior</option>    
+            </select> <br>
+             
+
+            <div id="totalCompra" class="alert alert-primary" role="alert">Total a pagar : $ </div><br>
+
+         <div class="container">   
+            <div class="form-row">
+
+                 <div class="col-12 col-ms-6">
+                     <button type="reset" class="btn btn-block">Borrar</button>
+                 </div>
+                 <div class="col-12 col-ms-6">
+                     <button type="button" id="botonCalcular" onclick="resumen()" class="btn btn-block">resumen</botton> 
+                 </div>
+            </div>
+
+         </div>
+        </form>
+    </div>
+
+    <footer>
+
+        <nav class="navbar" class="footer">
+            <a href="#" id="logo">Preguntas frecuentes</a>
+            <ul class="navlinks">
+                <li><a href="#">Contactanos</a></li>
+                <li><a href="#">Prensa</a></li>
+                <li><a href="#">Conferencias</a></li>
+                <li><a href="#" class="blanco">Terminos y condiciones</a></li>
+                <li><a href="#" >Privacidad</a></li>
+                <li><a href="#">Estudiantes</a></li>
+            </ul>
+        
+        </nav>
+
+
+
+    </footer>
+
+
+ <script src="js/tickets.js"></script>
+
+</body>
+</html>
